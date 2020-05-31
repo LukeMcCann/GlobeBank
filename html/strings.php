@@ -16,7 +16,7 @@
         <br />
         <?php
             echo "{$phrase} Again<br />";
-            echo "{\$phrase} Again<br />"
+            echo "{$phrase} Again<br />"
         ?>
         <br />
         <br />
@@ -40,5 +40,15 @@
         <br />
         Uppercase words:  <?php echo ucwords($third);?>
         <br />
+        Length: <?php echo strlen($third); ?>
+        <br />
+        Trim: <?php echo "A" . trim(" B C D ") . "E"; ?>
+        <br />
+        Find: <?php echo strstr($third, "brown"); ?>
+        <br />
+        Replace by string: <?php echo 
+        str_replace("quick", "super-fast", $third);?>
+        <br />
+        Repeat string: <?php echo str_repeat($third, 2); ?>
     </body>
 </html>
