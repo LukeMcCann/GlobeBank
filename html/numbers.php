@@ -25,7 +25,18 @@
         Random (min, max): 
         <?= 
             # <?= can be used for instant output instead of using 'echo', be wary when using this.
+            # as the calculation will be output directly.
             rand(2, 30); 
         ?>
+        <br />
+        +=: <?php echo $var2 += 4;?>
+        <br />
+        -=: <?php echo $var2 -= 1;?>
+        <br />
+        *=: <?php echo $var2 *= 0; ?>
+        <br />
+        /=: <?php $var = 2; echo $var2 /= 2;?>
+        <br />
+        %=: <?php $var = 8; echo $var2 %= 3?>
     </body>
 </html>
