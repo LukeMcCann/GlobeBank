@@ -50,5 +50,11 @@
         str_replace("quick", "super-fast", $third);?>
         <br />
         Repeat string: <?php echo str_repeat($third, 2); ?>
+        <br />
+        Make substring: <?php echo substr($third, 5, 10);?>
+        <br />
+        Find position: <?php echo strpos($third, "brown");?>
+        <br />
+        Find character: <?php echo strchr($third, "z");?>
     </body>
 </html>
