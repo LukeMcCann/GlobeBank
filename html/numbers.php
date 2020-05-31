@@ -44,5 +44,31 @@
         Decrement: <?php $four = 4; echo --$four ?>
         <br />
         Conversion: <?php $result = 1 + "1"; echo $result?>
+
+        <br />
+        <br />
+        <br />
+
+        <?php echo "Floats <br /><br />" ?>
+
+        <?= "Float: " . $float = 3.14;?><br />
+        <?= "Float: " . $float = 8; ?><br />
+        <?= "Float: " . $float = 4/3;?><br />
+
+        <br />
+        <?php "Float Functions: <br /><br />"?>
+        Round: <?= round($float,1); ?><br />
+        Ceiling: <?= ceil($float); ?><br />
+        Floor: <?= floor($float); ?><br />
+
+        <?php $integer = 2;?>
+        IsInt: <?php echo "Is {$integer} integer? " . is_int($integer); ?><br />
+        <?php echo "Is {$float} integer? " . is_int($float); ?> <br /><br />
+
+        <?php 
+        # This can be used for long, float, int double etc...
+        echo "is {$integer} float?" . is_float($integer);
+        ?>
+
     </body>
 </html>
