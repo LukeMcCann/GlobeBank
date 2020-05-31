@@ -9,7 +9,7 @@
             echo $var1;
             echo "<br />";
             $var2 = 20;
-            echo $var2;
+            echo $Var2;
         ?>
     </body>
 </html>
