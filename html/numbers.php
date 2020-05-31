@@ -38,5 +38,11 @@
         /=: <?php $var = 2; echo $var2 /= 2;?>
         <br />
         %=: <?php $var = 8; echo $var2 %= 3?>
+        <br />
+        Increment: <?php $nine = 9; echo ++$nine ?> 
+        <br />
+        Decrement: <?php $four = 4; echo --$four ?>
+        <br />
+        Conversion: <?php $result = 1 + "1"; echo $result?>
     </body>
 </html>
