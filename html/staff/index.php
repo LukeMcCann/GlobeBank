@@ -1,3 +1,4 @@
+<?php require_once('../../private/initialize.php'); ?>
 <!doctype html>
 
 <html lang="en">
@@ -12,11 +13,15 @@
     <header>
       <h1>GBI Staff Area</h1>
     </header>
-    <nav>
+    <navigation>
       <ul>
         <li><a href="index.php">Menu</a></li>
       </ul>
-    </nav>
+    </navigation>
+
+    <div id="content">
+
+    </div>
 
     <footer>
       &copy; <?php echo date('Y'); ?>Globe Bank
