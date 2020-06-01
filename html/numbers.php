@@ -66,7 +66,7 @@
         <?php echo "Is {$float} integer? " . is_int($float); ?> <br /><br />
 
         <?php 
-        # This can be used for long, float, int double etc...
+        # This can be used for long, float, numeric, int double etc...
         echo "is {$integer} float?" . is_float($integer);
         ?>
 
