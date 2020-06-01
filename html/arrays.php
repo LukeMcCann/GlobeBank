@@ -55,5 +55,15 @@
             print_r($assocNumbers);
         ?>
 
+        <?php echo "<br /><br />Array Functions: <br /><br />";?>
+        Count: <?= count($numbers); ?><br />
+        Max: <?= max($numbers);?><br />
+        Min: <?= min($numbers); ?><br />
+        Sort: <?php rsort($numbers); print_r($numbers) ?>;<br />
+        Reverse Sort: <?php rsort($numbers); print_r($numbers); ?><br />
+        Implode: <?php echo $num_string = implode(" @ ", $numbers); ?><br />
+        Explode: <?php print_r(explode(" @ ", $num_string)); ?><br />
+        InArray-True: <?= in_array(20, $numbers); ?> <br />
+        InArray-False: <?= in_array(100, $numbers); ?>
     </body>
 </html>
