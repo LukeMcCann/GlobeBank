@@ -18,6 +18,6 @@
 
     <navigation>
       <ul>
-        <li><a href=<?php echo "../index.php"?>>Menu</a></li>
+        <li><a href=<?php echo WWW_ROOT . "index.php"?>>Menu</a></li>
       </ul>
     </navigation>
