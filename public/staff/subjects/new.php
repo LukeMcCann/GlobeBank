@@ -8,6 +8,10 @@ if($test == '404') {
     error_404();
 } else if($test == '500') {
     error_500();
+} else if($test == 'redirect') {
+    header("Location: index.php");
+    exit;
 } else {
     echo 'No error';
-}?>
+}
+?>
