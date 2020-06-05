@@ -38,6 +38,9 @@ if($test == '404') {
       <dl>
         <dt>Visible</dt>
         <dd>
+        <!-- Once the form is submitted the data sent would be no value whatsoever if visible is
+             not checked. By placing a hidden value it will take presidence if the visible is not
+             checked sending a 0 value, as the checkbox comes later it takes presedence when checked-->
           <input type="hidden" name="visible" value="0" />
           <input type="checkbox" name="visible" value="1" />
         </dd>
