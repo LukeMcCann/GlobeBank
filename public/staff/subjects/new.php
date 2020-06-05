@@ -9,8 +9,7 @@ if($test == '404') {
 } else if($test == '500') {
     error_500();
 } else if($test == 'redirect') {
-    header("Location: index.php");
-    exit;
+    redirect_to(url_for('/staff/subjects/index.php'));
 } else {
     echo 'No error';
 }
