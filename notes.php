@@ -36,6 +36,17 @@
             contain an underscore at the beginning and consist of all caps. 
             
                 e.g. $_GET
+
+            Super globals are always available in all variable scopes.
+            PHP sets the values of these super globals before processing
+            the page code. 
+
+            these can be accessed in the same manner you may access any other array:
+
+            <code><?php echo "<?php \$page = \$_GET['page']; ?>"?></code>
+
+            This asssigns the variable "page" to the value of "page" from our super global
+            associative array, the vlaue attained from super globals are always strings. 
         </p>
         
         <script src="" async defer></script>
