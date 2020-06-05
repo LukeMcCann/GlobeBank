@@ -32,12 +32,12 @@
 
             <?php foreach($pages as $page) { ?>
                 <tr>
-                    <td><?php echo $page['id']; ?></td>
-                    <td><?php echo $page['position']; ?></td>
+                    <td><?php echo htmlspecialchars($page['id']); ?></td>
+                    <td><?php echo htmlspecialchars($page['position']); ?></td>
                     <td><?php echo $page['visible'] == 1 ? 'true' : 'false'; ?></td>
-                    <td><?php echo $page['menu_name']; ?></td>
+                    <td><?php echo htmlspecialchars($page['menu_name']); ?></td>
                     <!--Adds id as a URL parameter -->
-                    <td><a class="action" href="<?php echo url_for('/staff/pages/show.php?id=' . $page['id']);?>">View</a></td>
+                    <td><a class="action" href="<?php echo url_for('/staff/pages/show.php?id=' . htmlspecialchars(urlencode($page['id'])));?>">View</a></td>
                     <td><a class="action" href="">Edit</a></td>
                     <td><a class="action" href="">Delete</a></td>
                 </tr>
