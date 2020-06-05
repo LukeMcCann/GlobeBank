@@ -40,6 +40,11 @@
                 Rawurlencode is used on the path (everything before '?')
 
                 urlencode is used on the query string (after the '?' (the url parameters))
+
+                these are followed by deconde options in the same manner.
+
+                Decode methods are rarely needed to be manually envoked as PHP 
+                automatically calls these when it receives a URL.
              -->
             
             <?php foreach($subjects as $subject) { ?>
