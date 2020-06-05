@@ -32,7 +32,16 @@
                 <th>&nbsp;</th>
             </tr>
 
-            <!-- Populate table -->
+            <!-- Populate table
+
+                Rawurlencode converts spaces to '%20'
+                urlencode converts spaces to '+'
+
+                Rawurlencode is used on the path (everything before '?')
+
+                urlencode is used on the query string (after the '?' (the url parameters))
+             -->
+            
             <?php foreach($subjects as $subject) { ?>
                 <tr>
                     <td><?php echo $subject['id']; ?></td>

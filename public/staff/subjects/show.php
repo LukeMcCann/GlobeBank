@@ -4,6 +4,5 @@
     # php7 can do this even simpler using the null coalescing operator
     # check if val there, if it is use it else use second value instead
     $id = $_GET['id'] ?? '1';
-
     echo $id;
 ?>
