@@ -48,7 +48,6 @@
 
                 Encoding is not necessary on form parameters before
                 they are sent. HTML takes care of reserve values in this case.
-
              -->
             
             <?php foreach($subjects as $subject) { ?>
@@ -58,8 +57,8 @@
                     <td><?php echo $subject['visible'] == 1 ? 'true' : 'false'; ?></td>
                     <td><?php echo $subject['menu_name']; ?></td>
                     <!--Adds id as a URL parameter -->
-                    <td><a class="action" href="<?php echo url_for('/staff/subjects/show.php?id=' . $subject['id']);?>">View</a></td>
-                    <td><a class="action" href="<?php echo url_for('/staff/subjects/edit.php?id=' . $subject['id']); ?>">Edit</a></td>
+                    <td><a class="action" href="<?php echo url_for('/staff/subjects/show.php?id=' . htmlspecialchars(urlencode($subject['id'])));?>">View</a></td>
+                    <td><a class="action" href="<?php echo url_for('/staff/subjects/edit.php?id=' . htmlspecialchars(urlencode($subject['id']))); ?>">Edit</a></td>
                     <td><a class="action" href="">Delete</a></td>
                 </tr>
             <?php } ?>

@@ -38,7 +38,7 @@
                     <td><?php echo htmlspecialchars($page['menu_name']); ?></td>
                     <!--Adds id as a URL parameter -->
                     <td><a class="action" href="<?php echo url_for('/staff/pages/show.php?id=' . htmlspecialchars(urlencode($page['id'])));?>">View</a></td>
-                    <td><a class="action" href="">Edit</a></td>
+                    <td><a class="action" href="<?php echo url_for('/staff/pages/edit.php?id=' . htmlspecialchars(urlencode($page['id'])));?>">Edit</a></td>
                     <td><a class="action" href="">Delete</a></td>
                 </tr>
             <?php } ?>
