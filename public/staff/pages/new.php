@@ -1,15 +1,15 @@
 <?php require_once('../../../private/initialize.php');?>
 
 <?php include(SHARED_PATH . '/staff_header.php');?>
-<?php $page_title = 'Create Subject'; ?>
+<?php $page_title = 'Create Page'; ?>
 <div id="content">
 
-<a class="back-link" href="<?php echo url_for('/staff/subjects/index.php'); ?>">&laquo; Back to List</a>
+<a class="back-link" href="<?php echo url_for('/staff/pages/index.php'); ?>">&laquo; Back to List</a>
 
-<div class="subject new">
-  <h1>Create Subject</h1>
+<div class="page new">
+  <h1>Create Page</h1>
 
-  <form action="<?php echo url_for('/staff/subjects/create.php');?>" method="post">
+  <form action="<?php echo url_for('/staff/pages/create.php');?>" method="post">
     <dl>
       <dt>Menu Name</dt>
       <dd><input type="text" name="menu_name" value="" /></dd>
@@ -33,7 +33,7 @@
       </dd>
     </dl>
     <div id="operations">
-      <input type="submit" value="Create Subject" />
+      <input type="submit" value="Create Page" />
     </div>
   </form>
 </div>

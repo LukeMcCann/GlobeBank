@@ -16,7 +16,7 @@
     <h1>Pages</h1>
 
     <div class="actions">
-      <a class="actions" href="">Create New Subject</a>
+      <a class="actions" href="<?php echo url_for('/staff/pages/new.php') ?>">Create New Subject</a>
     </div>
 
     <table class="list">
