@@ -35,13 +35,13 @@ if(request_is_post()) {
   <form action="<?php echo url_for('/staff/pages/edit.php?id=' . htmlspecialchars(urlencode($id)));?>" method="post">
     <dl>
       <dt>Menu Name</dt>
-      <dd><input type="text" name="menu_name" value="" /></dd>
+      <dd><input type="text" name="menu_name" value="<? echo htmlspecialchars($menu_name) ?>" /></dd>
     </dl>
     <dl>
       <dt>Position</dt>
       <dd>
         <select name="position">
-          <option value="1">1</option>
+          <option value="1" <? if($position == "1") { echo " selected"; } ?>>1</option>
         </select>
       </dd>
     </dl>
@@ -52,7 +52,7 @@ if(request_is_post()) {
            not checked. By placing a hidden value it will take presidence if the visible is not
            checked sending a 0 value, as the checkbox comes later it takes presedence when checked-->
         <input type="hidden" name="visible" value="0" />
-        <input type="checkbox" name="visible" value="1" />
+        <input type="checkbox" name="visible" value="1" <?php if($visible == "1") { echo " checked"; } ?>/>
       </dd>
     </dl>
     <div id="operations">
