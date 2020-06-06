@@ -45,6 +45,10 @@
 
                 Decode methods are rarely needed to be manually envoked as PHP 
                 automatically calls these when it receives a URL.
+
+                Encoding is not necessary on form parameters before
+                they are sent. HTML takes care of reserve values in this case.
+
              -->
             
             <?php foreach($subjects as $subject) { ?>
